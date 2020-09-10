@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Project Title</title>
+    <style>
+    table {
+    height: 100px;
+    overflow-y: scroll;
+    }
+</style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">PROJECT NAME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        
+    </nav>
+    <div class="mb-3"></div>
+   
+    <div class="row">
+        <div class="col-md-4">
+                <h4 class="text-uppercase text-center">Projects</h4>
+                <table class="table table-sm table-bordered" id="projectsName" ></table>
+                
+        </div>
+        <div class="col-md-4">
+            <h4 class="text-uppercase text-left">Add New Projects</h4>
+            <form  id="newProject">        
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="inputPassword2" class="sr-only">Project Name</label>
+                    <input type="text" class="form-control" id="projectName" placeholder="Reactant Name">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                       
+                        <input type="email" class="form-control" id="invitationEmailId" placeholder="Enter Inivtation Email Id or Keep Empty">
+                    </div>
+                <button type="submit" class="btn btn-primary mx-sm-3 mb-2">Create Project</button>
+            </form>
+        </div>
+        <div class="col-md-4">
+                <h4 class="text-uppercase text-left mx-sm-3 mb-2">New Prediction</h4>
+                <form  id="newPrediction">        
+                    <div class="form-group mx-sm-3 mb-2">
+                        <label for="inputPassword2" class="sr-only">Select Projects</label>
+                        <select name="projectName" id="projectNameSelect" class="form-control"></select>
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                           
+                            <input type="text" class="form-control"  name="reactants1" id="reactants1" placeholder="Enter Reactant 1">
+                    </div>
+                    <div class="form-group mx-sm-3 mb-2">
+                       
+                        <input type="text" class="form-control"  name="reactants2" id="reactants2" placeholder="Enter Reactant 2">
+                     </div>
+                
+
+                    <button type="submit" class="btn btn-primary mx-sm-3 mb-2">Create Predection</button>
+                    <button type="button" class="btn btn-primary mx-sm-3 mb-2" id="PredectionDetailsButton" onclick="getPredictionDetails()" style="display:none">Predection Details</button>
+                </form>
+                
+        </div>
+        <div class="col-md-12 text-center">
+               
+                <div id="imageOfResult"></div>
+                <h3 id="ConfidentSpanDiv"  class="mt-4" style="display:none">Confident : <span id="ConfidentSpan"></span></h3>
+        </div>
+       
+    </div>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./app.js">
+       
+         
+       
+    </script>
+</body>
+</html>
